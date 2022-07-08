@@ -21,6 +21,7 @@ export default function TextForm(props) {
     const handleTitleClick = () => {
         const arr = text.split(" ");
         for (var i = 0; i < arr.length; i++) {
+            arr[i]=arr[i].toLocaleLowerCase();
             arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
         }
         const str2 = arr.join(" ");
